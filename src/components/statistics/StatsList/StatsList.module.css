@@ -1,0 +1,10 @@
+.stats__list {
+  display: flex;
+  justify-content: center;
+}
+
+.stats__item {
+  padding: 5px;
+  width: 50px;
+  border: 1px solid black;
+}

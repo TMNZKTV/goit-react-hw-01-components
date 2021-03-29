@@ -1,15 +1,20 @@
+// Libraries
 import React from "react";
-import Profile from "./components/profile/Profile";
-import user from "./components/profile/user.json";
 
-import Statistics from "./components/statistics/Statistics";
-import stats from "./components/statistics/statistical-data.json";
+// Components
+import Profile from "./components/profile/Profile/Profile";
+import Statistics from "./components/statistics/Statistics/Statistics";
+import FriendList from "./components/friendlist/FriendList/FriendList";
+import Transactions from "./components/transactions/Transactions/Transactions";
 
-import FriendList from "./components/friendlist/FriendList";
-import friends from "./components/friendlist/friendslist.json";
+// Data
+import user from "./components/profile/ProfileData/user.json";
+import stats from "./components/statistics/StatsData/statistical-data.json";
+import friends from "./components/friendlist/FriendsData/friendslist.json";
+import transactions from "./components/transactions/TransactionsData/transactions.json";
 
-import Transactions from "./components/transactions/Transactions";
-import transactions from "./components/transactions/transactions.json";
+// Styles
+import "../src/styles.css";
 
 const App = () => {
   return (

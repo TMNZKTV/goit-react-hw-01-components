@@ -1,12 +1,13 @@
 import React from "react";
-import ProfileDescription from "./ProfileDescription";
-import ProfileStatsList from "./ProfileStatsList";
+import ProfileDescription from "../ProfileDescription/ProfileDescription";
+import ProfileStatsList from "../ProfileStatsList/ProfileStatsList";
 import PropTypes from "prop-types";
-import DefaultImage from "./default-image.jpg";
+import DefaultImage from "../ProfileData/default-image.jpg";
+import styles from "./Profile.module.css";
 
 const Profile = ({ name, tag, location, avatar, stats }) => {
   return (
-    <div className="profile">
+    <div className={styles.profile}>
       <ProfileDescription
         name={name}
         tag={tag}

@@ -1,0 +1,22 @@
+.stats {
+  padding: 10px 10px 0 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.item {
+  margin-right: 10px;
+}
+.item:last-child {
+  margin-right: 0px;
+}
+
+.item__desc {
+  display: flex;
+  justify-content: center;
+}
+.item__numbers {
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+}

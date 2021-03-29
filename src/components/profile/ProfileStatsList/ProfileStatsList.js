@@ -1,13 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
+import styles from "./ProfileStatsList.module.css";
 
 const ProfileStatsList = ({ stats }) => {
   return (
-    <ul className="stats">
+    <ul className={styles.stats}>
       {Object.keys(stats).map((key) => (
-        <li key={key}>
-          <span>{key}</span>
-          <span>{stats[key]}</span>
+        <li key={key} className={styles.item}>
+          <span className={styles.item__desc}>{key}</span>
+          <span className={styles.item__numbers}>{stats[key]}</span>
         </li>
       ))}
     </ul>

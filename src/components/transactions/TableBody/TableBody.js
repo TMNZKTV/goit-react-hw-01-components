@@ -1,13 +1,20 @@
 import React from "react";
 import PropTypes from "prop-types";
+import styles from "../TableBody/TableBody.module.css";
 
 const TableBody = ({ id, type, amount, currency, i }) => {
   return (
-    <tbody>
+    <tbody className={styles.table__body}>
       <tr key={id}>
-        <td key={i}>{type}</td>
-        <td key={i}>{amount}</td>
-        <td key={i}>{currency}</td>
+        <td key={i} className={styles.table__data}>
+          {type}
+        </td>
+        <td key={i} className={styles.table__data}>
+          {amount}
+        </td>
+        <td key={i} className={styles.table__data}>
+          {currency}
+        </td>
       </tr>
     </tbody>
   );

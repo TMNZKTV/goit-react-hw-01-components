@@ -1,0 +1,8 @@
+.table__head {
+  outline: 1px solid black;
+}
+
+.table__data {
+  outline: 1px solid black;
+  text-align: center;
+}
