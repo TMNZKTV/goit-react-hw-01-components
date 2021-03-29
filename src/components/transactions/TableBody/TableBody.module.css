@@ -1,8 +1,9 @@
 .table__body {
-  outline: 1px solid black;
+  border: 1px solid transparent;
   width: 600px;
 }
 .table__data {
-  outline: 1px solid black;
+  border: 1px solid #666;
+  text-transform: capitalize;
   text-align: center;
 }

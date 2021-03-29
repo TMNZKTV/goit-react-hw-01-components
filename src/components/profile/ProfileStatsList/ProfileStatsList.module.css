@@ -1,11 +1,12 @@
 .stats {
-  padding: 10px 10px 0 10px;
   display: flex;
   justify-content: center;
 }
 
 .item {
-  margin-right: 10px;
+  padding: 5px;
+  outline: 1px solid #d0d1d0;
+  width: 60px;
 }
 .item:last-child {
   margin-right: 0px;
