@@ -4,11 +4,11 @@ import styles from "../TableRow/TableRow.module.css";
 
 const TableRow = ({ type, amount, currency }) => {
   return (
-    <>
+    <tr>
       <td className={styles.table__data}>{type}</td>
       <td className={styles.table__data}>{amount}</td>
       <td className={styles.table__data}>{currency}</td>
-    </>
+    </tr>
   );
 };
 

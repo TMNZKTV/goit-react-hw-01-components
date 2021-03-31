@@ -11,9 +11,7 @@ const Transactions = ({ items }) => {
 
       <tbody className={styles.table__body}>
         {items.map(({ id, type, amount, currency }) => (
-          <tr key={id}>
-            <TableRow id={id} type={type} amount={amount} currency={currency} />
-          </tr>
+          <TableRow type={type} amount={amount} currency={currency} key={id} />
         ))}
       </tbody>
     </table>
