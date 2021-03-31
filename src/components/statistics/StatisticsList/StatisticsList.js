@@ -1,7 +1,7 @@
 import React from "react";
-import Stat from "../Stat/Stat";
+import StatisticsItem from "../StatisticsItem/StatisticsItem";
 import PropTypes from "prop-types";
-import styles from "../StatsList/StatsList.module.css";
+import styles from "../StatisticsList/StatisticsList.module.css";
 
 function randomColor() {
   const randomizer = Math.floor(Math.random() * 16777215).toString(16);
@@ -10,7 +10,7 @@ function randomColor() {
   return color;
 }
 
-const StatsList = ({ stats }) => (
+const StatisticsList = ({ stats }) => (
   <ul className={styles.stats__list}>
     {stats.map(({ id, label, percentage }) => (
       <li
@@ -18,13 +18,13 @@ const StatsList = ({ stats }) => (
         className={styles.stats__item}
         style={{ backgroundColor: randomColor() }}
       >
-        <Stat label={label} percentage={percentage} />
+        <StatisticsItem label={label} percentage={percentage} id={id} />
       </li>
     ))}
   </ul>
 );
 
-StatsList.propTypes = {
+StatisticsList.propTypes = {
   stats: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
@@ -32,4 +32,4 @@ StatsList.propTypes = {
   ).isRequired,
 };
 
-export default StatsList;
+export default StatisticsList;

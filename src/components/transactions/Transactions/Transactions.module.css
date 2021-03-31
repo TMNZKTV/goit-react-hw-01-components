@@ -9,3 +9,8 @@
   border-collapse: collapse;
   background-color: #f5f4fa;
 }
+
+.table__body {
+  border: 1px solid transparent;
+  width: 600px;
+}
