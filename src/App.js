@@ -8,10 +8,10 @@ import FriendList from "./components/friendlist/FriendList/FriendList";
 import Transactions from "./components/transactions/Transactions/Transactions";
 
 // Data
-import user from "./components/profile/ProfileJson/user.json";
-import stats from "./components/statistics/StatisticsJson/statistical-data.json";
-import friends from "./components/friendlist/FriendsJson/friendslist.json";
-import transactions from "./components/transactions/TransactionsJson/transactions.json";
+import user from "../src/Data/user.json";
+import stats from "../src/Data/statistical-data.json";
+import friends from "../src/Data/friendslist.json";
+import transactions from "../src/Data/transactions.json";
 
 // Styles
 import "../src/styles.css";

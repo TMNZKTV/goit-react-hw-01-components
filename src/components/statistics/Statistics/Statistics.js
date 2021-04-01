@@ -6,7 +6,7 @@ import styles from "../Statistics/Statistics.module.css";
 const Statistics = ({ title, stats }) => {
   return (
     <section className={styles.section}>
-      {{ title } ? <h1>{title.toUpperCase()}</h1> : ""}
+      {{ title } && <h1>{title.toUpperCase()}</h1>}
       <StatisticsList stats={stats} />
     </section>
   );

@@ -2,7 +2,7 @@ import React from "react";
 import ProfileDescription from "../ProfileDescription/ProfileDescription";
 import ProfileStatsList from "../ProfileStatsList/ProfileStatsList";
 import PropTypes from "prop-types";
-import DefaultImage from "../ProfilePic/default-image.jpg";
+import DefaultImage from "../../../img/profile-default-image.jpg";
 import styles from "./Profile.module.css";
 
 const Profile = ({ name, tag, location, avatar, stats }) => {
